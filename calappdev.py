@@ -33,4 +33,6 @@ for component in cal.walk():
 if st.button("Submit All"):
     st.success('All Courses Added')
 
+    st.write("Your courses have been added to the calendar. Download the updated calendar and import it into your calendar application.")
+    
     st.download_button('Download this semesters calendar', cal.to_ical(), file_name='NewCalendar.ics', icon=":material/download:")
